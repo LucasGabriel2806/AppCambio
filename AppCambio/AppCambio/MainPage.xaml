@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             Title="Calculadora de Cambio"
+             BackgroundColor="#999"
+             x:Class="AppCambio.MainPage">
+
+    <!--Main Page é uma Content Page, uma página de conteúdo,
+        acima tenho as namespaces xml
+        -->
+
+    <StackLayout VerticalOptions="CenterAndExpand" 
+                 BackgroundColor="#FFF"
+                 Margin="10"
+                 Padding="10">
+
+        <Label Text="Qual é o valor em Reais R$ ?"
+               VerticalOptions="Start"
+               HorizontalOptions="Center"
+               FontSize="Large"
+               FontAttributes="Bold" />
+
+        <Label Text="Qual é o valor da cotação do Dolar de hoje?"
+               VerticalOptions="Start"
+               FontSize="Medium" />
+
+        <Entry x:Name="txt_cotacao"
+               Placeholder="1 USD vale quantos R$? "
+               Keyboard="Numeric" />
+
+        <Label Text="Digite a quantia em Dolares:"
+               VerticalOptions="Start" 
+               FontSize="Medium" />
+
+        <Entry x:Name="txt_quantia_usd"
+               Placeholder="USD $ "
+               Keyboard="Numeric" />
+
+        <Button Text="CONVERTER"
+                FontSize="Large"
+                Clicked="Button_Clicked" />
+
+        <Label Text="O valor convertido é:"
+               HorizontalOptions="Center"
+               FontSize="Large"
+               FontAttributes="Bold" />
+
+        <Label x:Name="txt_reais"
+               HorizontalOptions="Center"
+               FontAttributes="Bold"
+               FontSize="Large"
+               TextColor="Red" />
+
+
+
+
+
+    </StackLayout>
+
+
+</ContentPage>
